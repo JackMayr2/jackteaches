@@ -1,48 +1,45 @@
 # JackTeaches
 
-JackTeaches is an interactive learning platform designed to make education fun and engaging across various subjects including Math, Algebra, Science, Language Arts, and History.
+An interactive educational platform for learning mathematics and other subjects through engaging activities and lessons.
 
 ## Features
 
-- **Interactive Lessons**: Engage with content through interactive activities
-- **Multiple Subjects**: Access a wide range of academic subjects
-- **Algebra-Libs**: An educational game where users create personalized algebra stories by filling in blanks, then solve the resulting equations
-- **Responsive Design**: Optimized for learning on any device
+- **Algebra Lessons**: Interactive algebra lessons with various difficulty levels
+- **Algebra-Libs**: Create your own algebraic stories and solve equations
+- **Linear Equations**: Visualize and practice with linear equations
+- **Systems of Equations**: Learn to solve systems of equations with multiple variables
+
+## Technologies Used
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 18.0.0 or later
+- Node.js
 - npm or yarn
 
 ### Installation
 
-1. Clone the repository:
 ```bash
-git clone <repository-url>
-```
+# Clone the repository
+git clone https://github.com/yourusername/jackteaches.git
 
-2. Navigate to the project directory:
-```bash
+# Navigate to project directory
 cd jackteaches
-```
 
-3. Install the dependencies:
-```bash
+# Install dependencies
 npm install
-# or
-yarn install
-```
 
-4. Start the development server:
-```bash
+# Start the development server
 npm run dev
-# or
-yarn dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+Visit `http://localhost:3000` to view the application.
 
 ## Project Structure
 
@@ -55,13 +52,6 @@ yarn dev
 
 - `src/components/`: Reusable UI components
   - `Navbar.tsx`: Navigation component
-
-## Technologies Used
-
-- [Next.js](https://nextjs.org/) - React framework
-- [React](https://reactjs.org/) - JavaScript library for building user interfaces
-- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 
 ## Available Scripts
 
