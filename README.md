@@ -41,6 +41,20 @@ npm run dev
 
 Visit `http://localhost:3000` to view the application.
 
+## Deployment
+
+### Deploying to Vercel
+
+This project is optimized for deployment on Vercel:
+
+1. Fork or push this repository to your GitHub account
+2. Sign up or log in to [Vercel](https://vercel.com)
+3. Click "New Project" and import your GitHub repository
+4. Keep the default settings and click "Deploy"
+5. Once deployed, you'll receive a URL to your live site
+
+Your site will automatically redeploy when you push changes to your repository.
+
 ## Project Structure
 
 - `src/app/`: Main application code

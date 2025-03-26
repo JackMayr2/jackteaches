@@ -3,14 +3,6 @@
 import { useState, FormEvent } from 'react';
 import Link from 'next/link';
 
-// Define the types of input fields we need for the advanced algebra libs
-type InputField = {
-    id: string;
-    label: string;
-    type: 'number' | 'text';
-    placeholder: string;
-};
-
 // Advanced Algebra story templates with placeholders for user inputs
 const storyTemplates = [
     {
@@ -148,8 +140,8 @@ const storyTemplates = [
              Verification:
              Let's substitute x = ${solution1} back into the original equation:
              ${a}(${solution1})² + ${b}(${solution1}) + ${c}
-             = ${a * Math.pow(Number(solution1), 2).toFixed(4)} + ${(b * Number(solution1)).toFixed(4)} + ${c}
-             = ${(a * Math.pow(Number(solution1), 2) + b * Number(solution1) + c).toFixed(4)} ≈ 0 ✓`
+             = ${(a * Math.pow(typeof solution1 === 'number' ? solution1 : 0, 2)).toFixed(4)} + ${(b * (typeof solution1 === 'number' ? solution1 : 0)).toFixed(4)} + ${c}
+             = ${(a * Math.pow(typeof solution1 === 'number' ? solution1 : 0, 2) + b * (typeof solution1 === 'number' ? solution1 : 0) + c).toFixed(4)} ≈ 0 ✓`
                     : `To solve the quadratic equation ${a}x² + ${b}x + ${c} = 0, we use the quadratic formula:
              
              x = (-b ± √(b² - 4ac)) / (2a)
